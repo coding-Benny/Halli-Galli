@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's play Halli-Galli</title>
+
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #14192c;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .btn-container{
+            margin-top: 100px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .rainbow{
+            background-color: #343A40;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 4vmin;
+            font-weight: bold;
+        }
+
+        .rainbow-1:hover{
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            animation:slidebg 2s linear infinite;
+        }
+
+        .rainbow-5:hover{
+            background-image:     linear-gradient(
+                    to right,
+                    #E7484F,
+                    #E7484F 16.65%,
+                    #F68B1D 16.65%,
+                    #F68B1D 33.3%,
+                    #FCED00 33.3%,
+                    #FCED00 49.95%,
+                    #009E4F 49.95%,
+                    #009E4F 66.6%,
+                    #00AAC3 66.6%,
+                    #00AAC3 83.25%,
+                    #732982 83.25%,
+                    #732982 100%,
+                    #E7484F 100%
+            );
+            animation:slidebg 2s linear infinite;
+        }
+        @keyframes slidebg {
+            to {
+                background-position:20vw;
+            }
+        }
+    </style>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- 웹 폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <div class="header_menu">
+                        <a href="#">Login</a>
+                        <a href="#">Message</a>
+                        <a href="#">My Page</a>
+                        <a href="#">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <div>
+        <img src="images/halli-galli-logo.png" alt="halli-galli logo">
+    </div>
+    <div class="btn-container text-center">
+        <a class="rainbow rainbow-5" href="#">New Game</a><br><br><br><br>
+        <a class="rainbow rainbow-5" href="#">Instructions</a><br><br><br><br>
+        <a class="rainbow rainbow-5" href="#">Settings</a><br><br><br><br>
+        <a class="rainbow rainbow-1" href="javascript:window.close()">Quit</a>
+    </div>
+</body>
+</html>
