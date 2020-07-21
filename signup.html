@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/form-validation.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="images/halli-galli-characters.png" alt="" width="100" height="100">
+        <h2>Sign-up form</h2>
+        <p class="lead">Below is an registration form to play Halli-Galli. Your person information will be safely managed. Enjoy Halli-Galli with your friends👩🏻‍🤝‍👩🏻👨🏻‍🤝‍👨🏻</p>
+    </div>
+
+    <div>
+        <h4 class="mb-3">Personal Information</h4>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Your first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Your last name is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid password is required.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" style="width: 100%;">
+                            Your username is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" class="form-control" id="birthday" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid birthday.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" id="age" placeholder="" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid age.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>South Korea</option>
+                        <option>United States</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                        <option>United Kingdom</option>
+                        <option>Canada</option>
+                        <option>Spain</option>
+                        <option>India</option>
+                        <option>Italy</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="city">City</label>
+                    <select class="custom-select d-block w-100" id="city" required>
+                        <option value="">Choose...</option>
+                        <optgroup label="South Korea">
+                            <option>Seoul</option>
+                            <option>Gyeonggi</option>
+                            <option>Busan</option>
+                        </optgroup>
+                        <optgroup label="United States">
+                            <option>Washington,D.C.</option>
+                            <option>California</option>
+                            <option>New York</option>
+                            <option>Los Angeles</option>
+                        </optgroup>
+                        <optgroup label="China">
+                            <option>Beijing</option>
+                            <option>Shanghai</option>
+                        </optgroup>
+                        <optgroup label="Japan">
+                            <option>Tokyo</option>
+                            <option>Osaka</option>
+                        </optgroup>
+                        <optgroup label="United Kingdom">
+                            <option>London</option>
+                            <option>Manchester</option>
+                            <option>Liverpool</option>
+                            <option>Cambridge</option>
+                            <option>Oxford</option>
+                        </optgroup>
+                        <optgroup label="Canada">
+                            <option>Toronto</option>
+                            <option>Vancouver</option>
+                            <option>Montreal</option>
+                        </optgroup>
+                        <optgroup label="Spain">
+                            <option>Madrid</option>
+                            <option>Barcelona</option>
+                        </optgroup>
+                        <optgroup label="India">
+                            <option>New Delhi</option>
+                            <option>Mumbai</option>
+                        </optgroup>
+                        <optgroup label="Italy">
+                            <option>Roma</option>
+                            <option>Venezia</option>
+                            <option>Milano</option>
+                        </optgroup>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="state">Gender</label>
+                    <select class="custom-select d-block w-100" id="state" required>
+                        <option value="">Choose...</option>
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>Other</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid gender.
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Sign up</button>
+        </form>
+    </div>
+</div>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 coding-Benny</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+</footer>
+
+<script src="js/jquery.min_1.12.4.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min_1.12.4.js"><\/script>')</script>
+<script src="js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+        crossorigin="anonymous"></script>
+<script src="js/form-validation.js"></script>
+</body>
+</html>
