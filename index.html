@@ -5,25 +5,8 @@
     <title>Let's play Halli-Galli</title>
 
     <style>
-        body {
-            height: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
-            background-color: #14192c;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family: 'Orbitron', sans-serif;
-        }
-
         .btn-container{
-            margin-top: 100px;
-        }
-
-        .text-center {
-            text-align: center;
+            margin-top: 70px;
         }
 
         .rainbow{
@@ -35,11 +18,6 @@
             text-decoration: none;
             font-size: 4vmin;
             font-weight: bold;
-        }
-
-        .rainbow-1:hover{
-            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-            animation:slidebg 2s linear infinite;
         }
 
         .rainbow-5:hover{
@@ -75,13 +53,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
 </head>
-<body>
+<body data-spy="scroll">
     <header id="header">
         <div class="container">
             <div class="row">
                 <div class="header">
                     <div class="header_menu">
-                        <a href="#">Login</a>
+                        <a href="login.html">Login</a>
                         <a href="#">Message</a>
                         <a href="#">My Page</a>
                         <a href="#">About</a>
@@ -90,15 +68,22 @@
             </div>
         </div>
     </header>
-    <br><br><br><br><br>
+    <br><br><br>
     <div>
         <img src="images/halli-galli-logo.png" alt="halli-galli logo">
     </div>
     <div class="btn-container text-center">
         <a class="rainbow rainbow-5" href="#">New Game</a><br><br><br><br>
         <a class="rainbow rainbow-5" href="#">Instructions</a><br><br><br><br>
-        <a class="rainbow rainbow-5" href="#">Settings</a><br><br><br><br>
-        <a class="rainbow rainbow-1" href="javascript:window.close()">Quit</a>
+        <a class="rainbow rainbow-5" href="#">Settings</a><br><br><br>
     </div>
+    <div class="container">
+        <img src="images/halli-galli-characters.png" class="img-fluid" alt="characters" style="float: left; margin-left: 30px; max-width: 230px;">
+        <img src="images/halli-galli-setting.png" class="img-fluid" alt="play-setting" style="float: right; margin-right: 30px; max-width: 230px;">
+    </div>
+
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+
 </body>
 </html>
