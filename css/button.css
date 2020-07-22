@@ -1,0 +1,108 @@
+.rainbow {
+    background-color: #343A40;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 4vmin;
+    font-weight: bold;
+    box-shadow: 0 0 1em rgba(255, 255, 255, .2);
+}
+
+.rainbow-5:hover {
+    background-image: linear-gradient(
+            to right,
+            #E7484F,
+            #E7484F 16.65%,
+            #F68B1D 16.65%,
+            #F68B1D 33.3%,
+            #FCED00 33.3%,
+            #FCED00 49.95%,
+            #009E4F 49.95%,
+            #009E4F 66.6%,
+            #00AAC3 66.6%,
+            #00AAC3 83.25%,
+            #732982 83.25%,
+            #732982 100%,
+            #E7484F 100%
+    );
+    animation: slidebg 2s linear infinite;
+    box-shadow: 0 0 2em rgba(255, 255, 255, .3);
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+#new-game {
+    appearance: none;
+    border: none;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+
+    transition: transform .1s cubic-bezier(.5, 0, .5, 1);
+}
+
+#new-game:active {
+    transform: scale(0.8) translateY(10%);
+    transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emoji {
+    --scale-x: 0;
+    --scale-y: 0;
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - .5rem);
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    transform: translate(
+            calc(var(--x) * 1px),
+            calc(var(--y) * 1px)
+    ) translate(-50%, -50%);
+    animation: emoji-enger .1s ease-in backwards,
+    emoji-exit 300ms linear calc((var(--lifetime, 3000) * 1ms) - 300ms) forwards;
+}
+
+@keyframes emoji-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes emoji-exit {
+    to {
+        opacity: 0;
+    }
+}
+
+.inner {
+    animation: inner-rotate .6s linear infinite;
+    transform: rotate(
+            calc(-1turn * var(--direction))
+    );
+}
+
+@keyframes inner-rotate {
+    to {
+        transform: none;
+    }
+}

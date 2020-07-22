@@ -4,11 +4,17 @@ body {
 }
 
 h2 {
+    font-family: 'Lobster', cursive;
     color: #f8b24f;
 }
 
 h4 {
+    font-family: "Lobster", cursive;
     color: #ea9a96;
+}
+
+button {
+    font-family: 'Lobster', cursive;
 }
 
 .container {

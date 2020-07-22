@@ -11,7 +11,15 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #14192c;
-    color: #95999c;
+    color: #e5e5e5;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+button {
+    font-family: 'Chewy', cursive;
 }
 
 .form-signin {
