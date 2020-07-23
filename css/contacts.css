@@ -1,0 +1,70 @@
+.header_icon { margin-top: 10px; padding-bottom: 45px;}
+.header_icon li { display: inline; margin: 0 2px; }
+.header_icon li a {
+    position: relative;
+    border-radius: 50%;
+    width: 60px; height: 60px; color: #fff;
+    display: inline-block;
+    font-size: 35px;
+    line-height: 67px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.header_icon li a span {
+    position: absolute;
+    left: 50%; bottom: -40px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 3px 9px;
+    border-radius: 6px 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.header_icon li a span:before {
+    content: '';
+    position: absolute;
+    left: 50%; top: -5px;
+    margin-left: -5px;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.header_icon li a:hover span {
+    opacity: 1;
+    bottom: -33px;
+}
+.header_icon li a:hover {
+    box-shadow:
+            0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+}
+
+#gmail { background-color: #d92027; }
+#gmail span { background-color: #d92027; }
+#gmail span:before { border-bottom-color: #d92027; }
+#gmail:hover { box-shadow: 0 0 0 3px rgba(207, 27, 27, 0.9) inset; }
+
+#github { background-color: #ff9234; }
+#github span { background-color: #ff9234; }
+#github span:before { border-bottom-color: #ff9234; }
+#github:hover { box-shadow: 0 0 0 3px rgba(255, 169, 49, 0.9) inset; }
+
+#medium { background-color: #ffcd3c; }
+#medium span { background-color: #ffcd3c; }
+#medium span:before { border-bottom-color: #ffcd3c; }
+#medium:hover { box-shadow: 0 0 0 3px rgba(255, 222, 77, 0.9) inset; }
+
+#tistory { background-color: #35d0ba; }
+#tistory span { background-color: #35d0ba; }
+#tistory span:before { border-bottom-color: #35d0ba; }
+#tistory:hover { box-shadow: 0 0 0 3px rgba(53, 234, 203, 0.9) inset; }
+
+#facebook { background-color: #3192bf; }
+#facebook span { background-color: #3192bf; }
+#facebook span:before { border-bottom-color: #3192bf; }
+#facebook:hover { box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset; }
+
+#twitter { background-color: #5c2a9d; }
+#twitter span { background-color: #5c2a9d; }
+#twitter span:before { border-bottom-color: #5c2a9d; }
+#twitter:hover { box-shadow: 0 0 0 3px rgba(92, 59, 174, 0.9) inset; }
