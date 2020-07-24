@@ -13,15 +13,15 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/sticky-footer.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/fontawesome.css" rel="stylesheet">
     <link href="css/contacts.css" rel="stylesheet">
-
+    <link href="css/footer-distributed-with-address-and-phones.css" rel="stylesheet">
 
     <!-- 웹 폰트 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <style>
         h1 {
             font-family: 'Bangers', cursive;
@@ -35,12 +35,16 @@
             color: #d1eaa3;
         }
 
-        a {
-            color: #e5e5e5;
+        a { color: #e5e5e5; }
+
+        a:hover {
+            color: #d291bc;
+            text-decoration: none;
         }
 
+
         li {
-            font-family: 'Kalam', cursive;
+            font-family: 'Coming Soon', cursive;
             font-size: large;
             list-style: none;
         }
@@ -69,50 +73,64 @@
         This is about JeongHyeon Lee, who developed this Hall-Galli game😊
     </p>
     <h3 class="mt-1">JeongHyeon Lee</h3>
-    <ul>
-        <li>🏫 Dept. of Computer Engineering, Hansung University</li>
-        <ul>
-            <li>👩🏻‍💻<a href="https://www.medium.com/pocs"> POCS </a></li>
-            <li>🐜<a href="https://www.medium.com/quantum-ant"> Quantum Ant </a></li>
-        </ul>
-        <li>💡 Other Projects</li>
-        <ul>
-            <li>🤖 <a
-                    href="https://www.github.com/coding-Benny/hwaseong-dormitory-chatbot">Hwaseong-Dormitory-Chatbot</a>
-            </li>
-        </ul>
-        <li>📫 Contacts</li>
-        <div class="header_icon">
-            <ul>
-                <li>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZbjWFqnCwTkDDssMhSrZgClSFwJmVTWzVfsnmgrSZRmTrhVHHjFTDgwXRSdkzTTvxCMKg"
-                       id="gmail" target="_blank"><i class="fa fa-envelope-open"></i><span>Gmail</span></a></li>
-                <li><a href="https://www.github.com/coding-Benny" id="github" target="_blank"><i class="fa fa-github"
-                                                                                                 aria-hidden="true"></i><span>Github</span></a>
-                </li>
-                <li><a href="https://medium.com/@benny._.lee" id="medium" target="_blank"><i class="fa fa-medium"
-                                                                                             aria-hidden="true"></i><span>Medium</span></a>
-                </li>
-                <li><a href="https://bennylee.tistory.com" id="tistory" target="_blank"><i class="fa fa-bold"
-                                                                                           aria-hidden="true"></i><span>Tistory</span></a>
-                </li>
-                <li><a href="https://www.facebook.com/jeonghyeon.lee.1048/" id="facebook" target="_blank"><i
-                        class="fa fa-facebook-square" aria-hidden="true"></i><span>Facebook</span></a></li>
-                <li><a href="https://twitter.com/CodingBenny" id="twitter" target="_blank"><i class="fa fa-twitter"
-                                                                                              aria-hidden="true"></i><span>Twitter</span></a>
-                </li>
-            </ul>
-        </div>
-    </ul>
-
 </div>
 
 <!-- footer -->
-<footer class="footer mt-auto py-3 fixed-bottom">
-    <div class="container">
-        <span class="text-muted">Copyright © 2020 by coding-Benny(JeongHyeon Lee)</span>
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Halli<span>Galli</span></h3>
+        <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Blog</a>
+            ·
+            <a href="#">Pricing</a>
+            ·
+            <a href="#">About</a>
+            ·
+            <a href="#">Faq</a>
+            ·
+            <a href="#">Contact</a>
+        </p>
+        <p class="footer-company-name">coding-Benny &copy; 2020</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>116, Samseongyo-ro 16-gil, Seongbuk-gu,</span> Seoul, Republic of Korea</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+82 760 0000</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZbjWFqnCwTkDDssMhSrZgClSFwJmVTWzVfsnmgrSZRmTrhVHHjFTDgwXRSdkzTTvxCMKg" target="_blank"><span
+                        class="__cf_email__">[email protected]</span></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>JeongHyeon Lee😊</span>
+            Junior student in the Dept. of Computer Engineering at Hansung University🌱 Belongs to 💻<a href="https://www.medium.com/pocs" target="_blank">POCS</a> and 🐜<a href="https://www.medium.com/quantum-ant" target="_blank">Quantum Ant</a>. Aim for a life that develops through constant effort🔥
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/jeonghyeon.lee.1048/" id="facebook" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i><span>Facebook</span></a>
+            <a href="https://twitter.com/CodingBenny" id="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            <a href="https://www.github.com/coding-Benny" id="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
+            <a href="https://medium.com/@benny._.lee" id="medium" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i><span>Medium</span></a>
+            <a href="https://bennylee.tistory.com" id="tistory" target="_blank"><i
+                    class="fa fa-bold"
+                    aria-hidden="true"></i><span>Tistory</span></a>
+
+        </div>
     </div>
 </footer>
+
 <script src="js/jquery.min_1.12.4.js"></script>
 <script src="js/modernizr-custom.js"></script>
 </body>

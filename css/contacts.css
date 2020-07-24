@@ -1,16 +1,15 @@
-.header_icon { margin-top: 10px; padding-bottom: 45px;}
-.header_icon li { display: inline; margin: 0 2px; }
-.header_icon li a {
+.footer-icons { display: inline; margin: 0 2px; }
+.footer-icons a {
     position: relative;
     border-radius: 50%;
-    width: 60px; height: 60px; color: #fff;
+    width: 50px; height: 50px; color: #fff;
     display: inline-block;
-    font-size: 35px;
-    line-height: 67px;
+    font-size: 25px;
+    line-height: 50px;
     transition: all 0.3s ease;
     text-align: center;
 }
-.header_icon li a span {
+.footer-icons a span {
     position: absolute;
     left: 50%; bottom: -40px;
     transform: translateX(-50%);
@@ -21,7 +20,7 @@
     opacity: 0;
     transition: all 0.3s ease;
 }
-.header_icon li a span:before {
+.footer-icons a span:before {
     content: '';
     position: absolute;
     left: 50%; top: -5px;
@@ -30,41 +29,36 @@
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
 }
-.header_icon li a:hover span {
+.footer-icons a:hover span {
     opacity: 1;
     bottom: -33px;
 }
-.header_icon li a:hover {
+.footer-icons a:hover {
     box-shadow:
             0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
-#gmail { background-color: #d92027; }
-#gmail span { background-color: #d92027; }
-#gmail span:before { border-bottom-color: #d92027; }
-#gmail:hover { box-shadow: 0 0 0 3px rgba(207, 27, 27, 0.9) inset; }
+#github { background-color: #222831; }
+#github span { background-color: #222831; }
+#github span:before { border-bottom-color: #222831; }
+#github:hover { box-shadow: 0 0 0 3px rgba(45, 45, 45, 0.9) inset; }
 
-#github { background-color: #ff9234; }
-#github span { background-color: #ff9234; }
-#github span:before { border-bottom-color: #ff9234; }
-#github:hover { box-shadow: 0 0 0 3px rgba(255, 169, 49, 0.9) inset; }
+#medium { background-color: #000000; }
+#medium span { background-color: #000000; }
+#medium span:before { border-bottom-color: #000000; }
+#medium:hover { box-shadow: 0 0 0 3px rgba(20, 20, 20, 0.9) inset; }
 
-#medium { background-color: #ffcd3c; }
-#medium span { background-color: #ffcd3c; }
-#medium span:before { border-bottom-color: #ffcd3c; }
-#medium:hover { box-shadow: 0 0 0 3px rgba(255, 222, 77, 0.9) inset; }
+#tistory { background-color: #0e9aa7; }
+#tistory span { background-color: #0e9aa7; }
+#tistory span:before { border-bottom-color: #0e9aa7; }
+#tistory:hover { box-shadow: 0 0 0 3px rgba(31, 171, 184, 0.9) inset; }
 
-#tistory { background-color: #35d0ba; }
-#tistory span { background-color: #35d0ba; }
-#tistory span:before { border-bottom-color: #35d0ba; }
-#tistory:hover { box-shadow: 0 0 0 3px rgba(53, 234, 203, 0.9) inset; }
+#facebook { background-color: #0f4c75; }
+#facebook span { background-color: #0f4c75; }
+#facebook span:before { border-bottom-color: #0f4c75; }
+#facebook:hover { box-shadow: 0 0 0 3px rgba(15, 90, 130, 0.9) inset; }
 
-#facebook { background-color: #3192bf; }
-#facebook span { background-color: #3192bf; }
-#facebook span:before { border-bottom-color: #3192bf; }
-#facebook:hover { box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset; }
-
-#twitter { background-color: #5c2a9d; }
-#twitter span { background-color: #5c2a9d; }
-#twitter span:before { border-bottom-color: #5c2a9d; }
-#twitter:hover { box-shadow: 0 0 0 3px rgba(92, 59, 174, 0.9) inset; }
+#twitter { background-color: #00a8cc; }
+#twitter span { background-color: #00a8cc; }
+#twitter span:before { border-bottom-color: #00a8cc; }
+#twitter:hover { box-shadow: 0 0 0 3px rgba(64, 186, 213, 0.9) inset; }
