@@ -5,9 +5,8 @@
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-
     padding: 55px 50px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .footer-distributed .footer-left,
@@ -20,14 +19,14 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
-    width: 40%;
+    width: 35%;
 }
 
 /* The company logo */
 
 .footer-distributed h3{
     color:  #ffffff;
-    font: normal 36px 'Cookie', cursive;
+    font: normal 70px 'Cookie', cursive;
     margin: 0;
 }
 
@@ -104,13 +103,13 @@
 /* Footer Right */
 
 .footer-distributed .footer-right{
-    width: 20%;
+    width: 25%;
 }
 
 .footer-distributed .footer-company-about{
     line-height: 20px;
     color:  #92999f;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: normal;
     margin: 0;
 }
@@ -118,7 +117,8 @@
 .footer-distributed .footer-company-about span{
     display: block;
     color:  #ffffff;
-    font-size: 14px;
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
 }

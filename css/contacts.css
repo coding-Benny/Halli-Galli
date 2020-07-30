@@ -62,3 +62,8 @@
 #twitter span { background-color: #00a8cc; }
 #twitter span:before { border-bottom-color: #00a8cc; }
 #twitter:hover { box-shadow: 0 0 0 3px rgba(64, 186, 213, 0.9) inset; }
+
+#bmc { background-color: #FF5F5F; }
+#bmc span { background-color: #FF5F5F; }
+#bmc span:before { border-bottom-color: #FF5F5F; }
+#bmc:hover { box-shadow: 0 0 0 3px rgba(242, 126, 126, 0.9) inset; }

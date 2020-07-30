@@ -5,16 +5,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 .footer-distributed{
-    position: fixed;
+    position: static;
     bottom: 0;
 }
 
 @media (max-height:800px){
-    footer { position: static; }
+    .footer-distributed { position: static; }
 }
 
 .container {
-    width: auto;
     max-width: 680px;
+    height: auto;
     padding: 0 15px;
 }
+
