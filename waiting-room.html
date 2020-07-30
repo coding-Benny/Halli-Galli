@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waiting Room</title>
+    <style>
+        * { margin: 0; padding: 0; width: 100vw; height: 100vh; }
+        #wrap { width: 100%; height: 100%; }
+        section { width: 50%; height: 50%; float: left; }
+        #player1-bg { background-color: #222831; }
+        #player2-bg { background-color: #393e46; }
+        #player3-bg { background-color: #393e46; }
+        #player4-bg { background-color: #222831; }
+        #start-button {
+            position: absolute;
+            max-width: 200px;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            margin-top: -105px;
+            margin-left: -100px;
+            filter: grayscale(100%);
+        }
+        .join {
+            position: absolute;
+            max-width: 100px;
+            height: auto;
+        }
+
+        #player1-join {
+            top: 5%;
+            left: 5%;
+            margin-top: -10px;
+            margin-left: -10px;
+            transform: rotate(-225deg);
+        }
+
+        #player2-join {
+            top: 5%;
+            right: 5%;
+            margin-top: -10px;
+            margin-right: -10px;
+            transform: rotate(225deg);
+        }
+
+        #player3-join {
+            bottom: 5%;
+            left: 5%;
+            margin-bottom: -10px;
+            margin-left: -10px;
+            transform: rotate(45deg);
+        }
+
+        #player4-join {
+            bottom: 5%;
+            right: 5%;
+            margin-bottom: -10px;
+            margin-right: -10px;
+            transform: rotate(-45deg);
+        }
+        /* mediaquery */
+        /* 화면 너비 0 ~ 1220px */
+        @media (max-width: 1220px) {
+            #start-button { max-width: 150px; height: auto; margin-top: -80px; margin-left: -75px; }
+            .join { max-width: 85px; height: auto; }
+            #player1-join, #player3-join { left: 8%; }
+            #player2-join, #player4-join { right: 8%; }
+        }
+
+        /* 화면 너비 0 ~ 960px */
+        @media (max-width: 960px) {
+            #start-button { max-width: 120px; height: auto; margin-top: -65px; margin-left: -60px; }
+            .join { max-width: 70px; height: auto; }
+            #player1-join, #player3-join { left: 8%; }
+            #player2-join, #player4-join { right: 8%; }
+        }
+
+        @keyframes gray-to-color {
+            0% { filter: grayscale(100%); }
+            100% { filter: grayscale(0%); }
+        }
+
+        @keyframes color-to-gray {
+            0% { filter: grayscale(0%); }
+            100% { filter: grayscale(100%); }
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <section id="player1-bg"></section>
+    <section id="player2-bg"></section>
+    <img src="images/join.png" class="join" id="player1-join" alt="join-button" onclick="check_join_status()">
+    <img src="images/join.png" class="join" id="player2-join" alt="join-button" onclick="check_join_status()">
+    <img src="images/videogame.png" id="start-button" alt="start-button">
+    <img src="images/join.png" class="join" id="player3-join" alt="join-button" onclick="check_join_status()">
+    <img src="images/join.png" class="join" id="player4-join" alt="join-button" onclick="check_join_status()">
+    <section id="player3-bg"></section>
+    <section id="player4-bg"></section>
+</div>
+<script>
+    let num_of_players = 0;
+    let start = document.getElementById('start-button');
+    let image1 = document.getElementById('player1-join');
+    let image2 = document.getElementById('player2-join');
+    let image3 = document.getElementById('player3-join');
+    let image4 = document.getElementById('player4-join');
+    let bg1 = document.getElementById('player1-bg')
+    let bg2 = document.getElementById('player2-bg')
+    let bg3 = document.getElementById('player3-bg')
+    let bg4 = document.getElementById('player4-bg')
+
+    function check_ready_to_start() {
+        if (num_of_players >= 2) {
+            start.style.filter = "grayscale(0%)";
+            start.style.transition = "filter 0.2s ease-in-out 0.1s";
+            start.addEventListener('click', function () {
+                location.href = "halligalli.html";
+            })
+        }
+        else {
+            start.style.filter = "grayscale(100%)";
+            start.style.transition = "filter 0.2s ease-in-out 0.1s";
+        }
+
+    }
+    function check_join_status() {
+        image1.addEventListener('click', function (event) {
+            if (image1.src.match("images/leave.png")) {
+                image1.src = "images/join.png";
+                bg1.style.backgroundColor = "#222831";
+                num_of_players--;
+                check_ready_to_start()
+            } else {
+                image1.src = "images/leave.png";
+                bg1.style.backgroundColor = "#f47c7c";
+                num_of_players++;
+                check_ready_to_start()
+            }
+        });
+
+        image2.addEventListener('click', function (event) {
+            if (image2.src.match("images/leave.png")) {
+                image2.src = "images/join.png";
+                bg2.style.backgroundColor = "#393e46";
+                num_of_players--;
+                check_ready_to_start()
+            } else {
+                image2.src = "images/leave.png";
+                bg2.style.backgroundColor = "#f7f48b";
+                num_of_players++;
+                check_ready_to_start()
+            }
+        });
+
+        image3.addEventListener('click', function (event) {
+            if (image3.src.match("images/leave.png")) {
+                image3.src = "images/join.png";
+                bg3.style.backgroundColor = "#393e46";
+                num_of_players--;
+                check_ready_to_start()
+            } else {
+                image3.src = "images/leave.png";
+                bg3.style.backgroundColor = "#a1de93";
+                num_of_players++;
+                check_ready_to_start()
+            }
+        });
+
+        image4.addEventListener('click', function (event) {
+            if (image4.src.match("images/leave.png")) {
+                image4.src = "images/join.png";
+                bg4.style.backgroundColor = "#222831";
+                num_of_players--;
+                check_ready_to_start()
+            } else {
+                image4.src = "images/leave.png";
+                bg4.style.backgroundColor = "#70a1d7";
+                num_of_players++;
+                check_ready_to_start()
+            }
+        });
+    }
+</script>
+</body>
+</html>

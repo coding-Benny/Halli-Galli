@@ -80,7 +80,7 @@
     <img src="images/halli-galli-logo.png" alt="halli-galli logo">
 </div>
 <div class="btn-container text-center">
-    <a class="rainbow rainbow-5" id="new-game" href="#">New Game</a><br><br><br><br>
+    <a class="rainbow rainbow-5" id="new-game" onclick="playGame()">New Game</a><br><br><br><br>
     <a class="rainbow rainbow-5" id="instructions" href="#">Instructions</a><br><br><br><br>
     <a class="rainbow rainbow-5" id="settings" href="#">Settings</a><br><br><br>
 </div>
@@ -99,6 +99,7 @@
     let width = window.innerWidth;
     let height = window.innerHeight;
     const body = document.body;
+    const newGame = document.getElementById('new-game');
 
     const elButton = document.querySelector(".rainbow#new-game");
     const elWrapper = document.querySelector(".btn-container");
@@ -261,6 +262,12 @@
 
     elButton.addEventListener("click", addEmojis);
     elButton.click();
+
+    function playGame() {
+        newGame.addEventListener('dblclick', function (event) {
+            location.href = "waiting-room.html";
+        });
+    }
 
     window.addEventListener("resize", () => {
         width = window.innerWidth;

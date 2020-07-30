@@ -1,10 +1,10 @@
 * { margin: 0; padding: 0; width: 100vw; height: 100vh; }
 #wrap { width: 100%; height: 100%; }
 section { width: 50%; height: 50%; float: left; }
-#player1_bg { background-color: #f47c7c; }
-#player2_bg { background-color: #f7f48b; }
-#player3_bg { background-color: #a1de93; }
-#player4_bg { background-color: #70a1d7; }
+#player1-bg { background-color: #f47c7c; }
+#player2-bg { background-color: #f7f48b; }
+#player3-bg { background-color: #a1de93; }
+#player4-bg { background-color: #70a1d7; }
 #bell {
     position: absolute;
     width: 250px;
